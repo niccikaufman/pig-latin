@@ -29,4 +29,12 @@ _[MIT](https://en.wikipedia.org/wiki/MIT_License)_
 
 ## Contact Information
 
-_niccikaufman@gmail.com_
+_niccikaufman@gmail.
+
+## Test-Driven Development (TDD) Documentation
+
+Describe: pigLatin()
+
+Test: "It will add 'way' to the end of words that begin with a vowel."
+Code: pigLatin("a");
+Expected Output: "away"
