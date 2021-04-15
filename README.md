@@ -33,8 +33,28 @@ _niccikaufman@gmail.
 
 ## Test-Driven Development (TDD) Documentation
 
-Describe: pigLatin()
+Describe: vowelCounter();
 
-Test: "It will add 'way' to the end of words that begin with a vowel."
-Code: pigLatin("a");
-Expected Output: "away"
+Test: "It recognizes a single vowel."
+Code: vowelCounter("a");
+Expected Output: 1
+
+Test: "It recognizes a single vowel regardless of case."
+Code: vowelCounter("A");
+Expected Output: 1
+
+Test: "It ignores non-alphabetical characters since they can't be vowels."
+Code: vowelCounter("*&$92%");
+Expected Output: 0
+
+Test: "It recognizes a single vowel in a word with multiple characters."
+Code: vowelCounter("cat");
+Expected Output: 1
+
+Test: "It recognizes multiple vowels in a single word."
+Code: vowelCounter("cater");
+Expected Output: 2
+
+Test: "It recognizes multiple instances of the same vowel in a single word."
+Code: vowelCounter("event");
+Expected Output: 2
